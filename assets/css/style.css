@@ -1,0 +1,357 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+/*colors website*/
+:root{
+    --primary-color:#ff852f;
+    --scondary-color:#000000;  
+    --bg-primary:#f7f7fa;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+
+section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Cairo", sans-serif;
+    
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "Cairo", sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*Utility classe*/
+
+
+/*./Utility classe*/
+/*scroll*/
+a#scrollUp {
+    bottom:2px;
+    right:7px;
+    padding:5px 10px;
+    background:var(--primary-color);
+    color:#FFF;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    animation:bounce 2s ease infinite;
+}
+a#scrollUp i{
+    font-size:15px;
+}
+.scrollUp
+{
+    position:fixed; z-index:2147483647; display:block;
+}
+/*./scroll*/
+
+/*genaral code*/
+.card{
+   margin-bottom: 10px;
+}
+.card-header{
+    background: var(--primary-color);
+    text-align: right;
+    padding-top: 10px;
+    height: 50px;
+    color: wheat;
+}
+hr{
+    border: 1px solid var(--primary-color);
+}
+/*./genaral code*/
+/*navbar*/
+header .navbar{
+    background-color: var(--scondary-color);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px ;
+}
+header .navbar a{
+    color: #fff;
+
+}
+header .navbar .logout
+{
+    margin-left: 10px;
+    font-family: "Cairo", sans-serif;
+}
+
+/*title*/
+
+.title {
+    text-align: right;
+    font-weight: 400;
+    background: var(--scondary-color);
+    padding: 14px 18px;
+    border-right: 30px solid var(--primary-color);
+    border-left: 30px solid var(--primary-color);
+    font-size: 19px;
+    color: #e9ecef;
+    
+}
+/*./title*/
+/*dashboard*/
+.dashboard{
+    margin: 10px;
+   
+}
+.dashboard .dashboard-box{
+    padding: 10px 25px;
+    transition: all .25s ease;
+    box-shadow: 0 15px 16px 0 rgba(225, 225, 225, 0.3);
+    background: rgb(243, 241, 241);
+    border-radius: 2px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 25px;
+
+}
+
+.dashboard .dashboard-box:hover{
+    box-shadow: 0 20px 21px 0 rgba(243, 107, 17, 0.9);
+    
+    
+   
+}
+.dashboard-box span{
+    color: var(--primary-color);
+ 
+}
+
+.dashboard a{
+    color:var(--scondary-color);
+   
+   
+}
+.dashboard a i{
+    color: var(--primary-color);
+    padding: 30PX;
+    
+}
+.dashboard h5{
+    margin-bottom: 10px;
+  
+}
+/*./dashboard*/
+/*login*/
+.login{
+    
+    padding: 8% 0 0;
+    margin: auto;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/*./login*/
+
+/*form*/
+.main-form{
+    margin: 10px 10px;
+
+}
+.main-form .Toolbar{
+    background-color: var(--scondary-color);
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.main-form input , .main-form textarea{
+    font-size: 17px;
+    
+    padding: 10px;
+}
+.main-form input:hover{
+    background-color:var(--primary-color);
+    transition: all .25s ease;
+    border: 1px solid var(--bg-primary);
+}
+
+.main-form  label{
+    margin: 5px;
+    color:var(--scondary-color);
+    margin-right: 9px;
+    font-weight: bold;
+}
+.main-form .btn-save{
+    background-color: var(--primary-color);
+    color: var(--scondary-color);
+}
+.main-form .btn-save:hover{
+    background-color: var(--scondary-color);
+    color: var(--bg-primary);
+    transition: all 0.3s ease;
+}
+.search{
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+    margin: 5px;
+    margin-bottom: 5px;
+      
+    }
+    .search input{
+     height: 60px;
+     text-indent: 117px;
+     border: 2px solid #d6d4d4;
+    }
+    .search input:focus{
+    box-shadow: none;
+     border: 2px solid var(--primary-color);
+
+
+    }
+
+    .search .fa-search{
+
+     position: absolute;
+     top: 20px;
+     left: 16px;
+
+    }
+
+    .search button{
+
+     position: absolute;
+     top: 5px;
+     right: 22px;
+     height: 50px;
+     width: 110px;
+     background-color: var(--primary-color);
+     color: #f8f9fa;
+     font-size: 18px;
+
+    }
+ 
+  .dropdown-serche .dropdown-toggle {
+    white-space: nowrap;
+    width: 50%;
+    margin-top: 5px;
+    padding: 10px;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+    height:50px;
+    background-color: var(--primary-color);
+    color:var(--bg-primary);
+  }
+
+  .fromaction {
+    text-align: center;
+    padding: 5px;
+
+  } 
+
+  .fromaction button{
+    margin-left: 0 10px;
+  }
+
+  .prodact_image{
+    width: 50px;
+    height: 50px;
+  }
+
+  .page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #ffffff;
+    background-color:var(--primary-color);
+    border: 0px solid ;
+    border-radius: 6px;
+    margin-right: 3px;
+}
+.pagination {
+    padding-right: 0;
+    border-radius: 11px;
+}
+.pagination li a{
+    font-size: 10px;
+}
+.page-link:hover {
+    background-color:var(--scondary-color);
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #021450;
+    background-color: var(--primary-color);
+   border:1px solid var(--primary-color);
+}
+.StandardTable thead th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.form-contant{
+width: 100%;
+margin: 0 auto;
+}
+   
+.form-contant .massege-error{
+    background-color: #ff0000;
+    font-size: 19px;
+    padding:5px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    opacity: 0.5;
+}
+.form-view{
+    margin: 10px;
+    padding: 10px;
+   
+}
+.form-view .viewtitle{
+margin: 10px 10px;
+}
+.form-view .viewtitle .view-label{
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 5px 10px;
+  
+}
+.form-view img{
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+
+/*./form*/
+
+
+
+/*footer*/
+.form-footer
+{
+    width: 100%;
+    padding: 30px;
+}
+footer{
+    background-color: var(--scondary-color);
+    color: #FFF;
+}
